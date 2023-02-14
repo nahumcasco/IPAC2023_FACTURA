@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{8CEA1362-0273-45EE-BDEB-4F41E5073552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{502FC0ED-F563-450A-9865-ADCF05B0B691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{EBEDE0E6-1275-43A9-99DA-2CDF8961995A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CEA1362-0273-45EE-BDEB-4F41E5073552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CEA1362-0273-45EE-BDEB-4F41E5073552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CEA1362-0273-45EE-BDEB-4F41E5073552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CEA1362-0273-45EE-BDEB-4F41E5073552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502FC0ED-F563-450A-9865-ADCF05B0B691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502FC0ED-F563-450A-9865-ADCF05B0B691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502FC0ED-F563-450A-9865-ADCF05B0B691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502FC0ED-F563-450A-9865-ADCF05B0B691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBEDE0E6-1275-43A9-99DA-2CDF8961995A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBEDE0E6-1275-43A9-99DA-2CDF8961995A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBEDE0E6-1275-43A9-99DA-2CDF8961995A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBEDE0E6-1275-43A9-99DA-2CDF8961995A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5117D016-7A18-4FF8-984D-4F07803D393C}
+	EndGlobalSection
+EndGlobal
