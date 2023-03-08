@@ -94,6 +94,7 @@
             this.ContraseñaTextBox.Enabled = false;
             this.ContraseñaTextBox.Location = new System.Drawing.Point(120, 90);
             this.ContraseñaTextBox.Name = "ContraseñaTextBox";
+            this.ContraseñaTextBox.PasswordChar = '*';
             this.ContraseñaTextBox.Size = new System.Drawing.Size(281, 22);
             this.ContraseñaTextBox.TabIndex = 5;
             // 
@@ -197,7 +198,6 @@
             // 
             // ModificarButton
             // 
-            this.ModificarButton.Enabled = false;
             this.ModificarButton.Location = new System.Drawing.Point(305, 239);
             this.ModificarButton.Name = "ModificarButton";
             this.ModificarButton.Size = new System.Drawing.Size(73, 32);
@@ -219,13 +219,13 @@
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Enabled = false;
             this.EliminarButton.Location = new System.Drawing.Point(463, 239);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(73, 32);
             this.EliminarButton.TabIndex = 16;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // CancelarButton
             // 
@@ -276,9 +276,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UsuariosForm";
             this.Text = "Usuarios";
+            this.Load += new System.EventHandler(this.UsuariosForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.FotoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UsuariosDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

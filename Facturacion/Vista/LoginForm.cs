@@ -1,11 +1,13 @@
-﻿using System;
+﻿using Datos;
+using Entidades;
+using System;
 using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class Login : Form
+    public partial class LoginForm : Form
     {
-        public Login()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -36,12 +38,33 @@ namespace Vista
             errorProvider1.Clear();
 
             //Validar usuario en la base de datos
+            Login login = new Login(CodigoUsuarioTextBox.Text, ContraseñaTextBox.Text);
+
+            UsuarioDB usuarioDB = new UsuarioDB();
+            Usuario usuario = new Usuario();
+
+            usuario = usuarioDB.Autenticar(login);
+
+            if (usuario != null)
+            {
+                if (usuario.EstaActivo)
+                {
+                    //Mandar al menu
+                    Menu menuFormulario = new Menu();
+                    this.Hide();
+                    menuFormulario.Show();
+                }
+                else
+                {
+                    MessageBox.Show("El usuario esta inactivo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Datos de usuario incorrectos");
+            }
 
 
-            //Mandar al menu
-            Menu menuFormulario = new Menu();
-            this.Hide();
-            menuFormulario.Show();
 
 
 
